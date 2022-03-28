@@ -39,5 +39,5 @@ const Counter = () => {
   );
 };
 
-const domContainer = document.querySelector("#like_button_container");
+const domContainer = document.querySelector("body");
 ReactDOM.render(e(Counter), domContainer);

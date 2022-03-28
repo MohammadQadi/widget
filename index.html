@@ -30,10 +30,11 @@
       var options = {
         x: 100,
       };
-      // s.onload = function () {
-      //   CreateWhatsappChatWidget(options);
-      // };
-      var x = document.getElementsByTagName("script")[0];
+
+      var x =
+        document.getElementsByTagName("script")[
+          document.getElementsByTagName("script").length - 1
+        ];
       x.parentNode.insertBefore(s, x);
     </script>
     <!-- Load our React component. -->

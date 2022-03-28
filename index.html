@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Add React in One Minute</title>
+  </head>
+  <body>
+    <!-- We will put our React component inside this div. -->
+    <div id="like_button_container"></div>
+    <div class="elfsight-app-beb34a57-efcd-4590-801d-189165c47ca3"></div>
+
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script>
+      var url = "./button.js";
+      var s = document.createElement("script");
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = url;
+      var options = {
+        x: 100,
+      };
+      // s.onload = function () {
+      //   CreateWhatsappChatWidget(options);
+      // };
+      var x = document.getElementsByTagName("script")[0];
+      x.parentNode.insertBefore(s, x);
+    </script>
+    <!-- Load our React component. -->
+    <!-- <script src="button.js">
+      var x = 3
+    </script> -->
+
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+  </body>
+</html>
